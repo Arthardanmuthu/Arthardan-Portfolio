@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Arthardan Muthu G – Computer Science Engineering Student, AI/ML Developer, and Software Engineer. Explore projects, skills, and achievements." />
+  <meta name="keywords" content="Arthardan Muthu, portfolio, AI developer, machine learning, CSE student, Chennai Institute of Technology" />
+  <meta name="author" content="Arthardan Muthu G" />
+  <meta property="og:title" content="Arthardan Muthu G | AI/ML Developer Portfolio" />
+  <meta property="og:description" content="Building intelligent solutions at the intersection of AI, software engineering, and real-world problems." />
+  <meta property="og:type" content="website" />
+  <title>Arthardan Muthu G | AI/ML Developer Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" aria-label="Arthardan Muthu G – Home">
+        <span class="logo-text">AM</span>
+        <span class="logo-dot"></span>
+      </a>
+
+      <ul class="nav-links" id="nav-links" role="menubar">
+        <li role="none"><a href="#home"         class="nav-link active" role="menuitem">Home</a></li>
+        <li role="none"><a href="#about"        class="nav-link" role="menuitem">About</a></li>
+        <li role="none"><a href="#skills"       class="nav-link" role="menuitem">Skills</a></li>
+        <li role="none"><a href="#projects"     class="nav-link" role="menuitem">Projects</a></li>
+        <li role="none"><a href="#experience"   class="nav-link" role="menuitem">Experience</a></li>
+        <li role="none"><a href="#achievements" class="nav-link" role="menuitem">Achievements</a></li>
+        <li role="none"><a href="#contact"      class="nav-link" role="menuitem">Contact</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="home" aria-label="Hero section">
+    <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
+    <div class="hero-glow hero-glow-1" aria-hidden="true"></div>
+    <div class="hero-glow hero-glow-2" aria-hidden="true"></div>
+    <div class="hero-grid" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span>
+        <span>Available for Internships &amp; Collaborations</span>
+      </div>
+
+      <p class="hero-greeting reveal">Hi, I'm</p>
+      <h1 class="hero-name reveal">Arthardan Muthu</h1>
+      <h2 class="hero-title reveal">
+        <span class="typed-wrapper">
+          <span class="typed-text" id="typedText"></span><span class="typed-cursor">|</span>
+        </span>
+      </h2>
+      <p class="hero-subtitle reveal">
+        Building intelligent solutions at the intersection of<br />
+        <span class="gradient-text">AI, software engineering, and real-world problems.</span>
+      </p>
+
+      <div class="hero-cta reveal">
+        <a href="#projects" class="btn btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+          View My Projects
+        </a>
+        <a href="resume/resume.pdf" class="btn btn-secondary" download aria-label="Download Arthardan's resume">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download Resume
+        </a>
+        <a href="#contact" class="btn btn-ghost">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Contact Me
+        </a>
+      </div>
+
+      <div class="hero-socials reveal">
+        <a href="https://github.com/Arthardanmuthu" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub profile">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+        </a>
+        <a href="#contact" class="social-link" aria-label="LinkedIn profile (link in contact section)">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="#achievements" class="social-link" aria-label="LeetCode profile (see achievements section)">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H19.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-scroll-indicator" aria-hidden="true">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="section about-section" id="about" aria-label="About me">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Crafting the Future, <span class="gradient-text">One Line at a Time</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>I'm a second-year Computer Science Engineering student at Chennai Institute of Technology with a strong interest in <strong>Artificial Intelligence, Machine Learning, Data Structures &amp; Algorithms,</strong> and software development.</p>
+          <p>I enjoy transforming complex problems into practical technology solutions. My experience includes developing AI-powered applications, exploring intelligent systems, and continuously improving my problem-solving skills through competitive programming.</p>
+          <p>My long-term goal is to build <strong>impactful technology products</strong> that solve real-world challenges.</p>
+
+          <div class="about-actions">
+            <a href="#contact" class="btn btn-primary">Let's Connect</a>
+            <a href="resume/resume.pdf" class="btn btn-secondary" download>Download CV</a>
+          </div>
+        </div>
+
+        <div class="about-stats reveal">
+          <div class="stat-card glass-card">
+            <div class="stat-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+            <div class="stat-info">
+              <span class="stat-label">Institution</span>
+              <span class="stat-value">Chennai Institute of Technology</span>
+            </div>
+          </div>
+          <div class="stat-card glass-card">
+            <div class="stat-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <div class="stat-info">
+              <span class="stat-label">CGPA</span>
+              <span class="stat-value stat-highlight">9.2 / 10</span>
+            </div>
+          </div>
+          <div class="stat-card glass-card">
+            <div class="stat-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H19.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg>
+            </div>
+            <div class="stat-info">
+              <span class="stat-label">LeetCode Solved</span>
+              <span class="stat-value stat-highlight">550+ Problems</span>
+            </div>
+          </div>
+          <div class="stat-card glass-card">
+            <div class="stat-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+            </div>
+            <div class="stat-info">
+              <span class="stat-label">Domain Focus</span>
+              <span class="stat-value">AI/ML &amp; Software Engineering</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section class="section skills-section" id="skills" aria-label="Technical skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Technical Skills</span>
+        <h2 class="section-title">Technology <span class="gradient-text">Stack</span></h2>
+        <p class="section-desc">A curated set of technologies I work with to build intelligent, scalable applications.</p>
+      </div>
+
+      <div class="skills-grid">
+
+        <!-- Programming -->
+        <div class="skill-category glass-card reveal">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3>Programming Languages</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+          </div>
+        </div>
+
+        <!-- DSA -->
+        <div class="skill-category glass-card reveal">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3h7v7H3z"/><path d="M14 3h7v7h-7z"/><path d="M14 14h7v7h-7z"/><path d="M3 14h7v7H3z"/></svg>
+            </div>
+            <h3>Data Structures &amp; Algorithms</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Arrays</span>
+            <span class="skill-tag">Linked Lists</span>
+            <span class="skill-tag">Stacks</span>
+            <span class="skill-tag">Queues</span>
+            <span class="skill-tag">Trees</span>
+            <span class="skill-tag">Graphs</span>
+            <span class="skill-tag">Sorting</span>
+            <span class="skill-tag">Searching</span>
+          </div>
+        </div>
+
+        <!-- AI/ML -->
+        <div class="skill-category glass-card reveal">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon skill-cat-icon--ai" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 6v6l4 2"/><circle cx="18" cy="6" r="3"/><path d="M18 9v6"/><path d="M15 12h6"/></svg>
+            </div>
+            <h3>AI &amp; Machine Learning</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag skill-tag--ai">Agentic AI</span>
+            <span class="skill-tag skill-tag--ai">Machine Learning</span>
+            <span class="skill-tag skill-tag--ai">Graph Neural Networks</span>
+            <span class="skill-tag skill-tag--ai">LangChain</span>
+            <span class="skill-tag skill-tag--ai">Gemini AI</span>
+            <span class="skill-tag skill-tag--ai">OCR</span>
+            <span class="skill-tag skill-tag--ai">Anomaly Detection</span>
+          </div>
+        </div>
+
+        <!-- Backend & DB -->
+        <div class="skill-category glass-card reveal">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            </div>
+            <h3>Backend &amp; Database</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">FastAPI</span>
+            <span class="skill-tag">MongoDB</span>
+            <span class="skill-tag">SQLite</span>
+            <span class="skill-tag">Firebase</span>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-category glass-card reveal">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <h3>Tools &amp; Platforms</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Linux CLI</span>
+            <span class="skill-tag">Google Colab</span>
+            <span class="skill-tag">AWS Cloud</span>
+            <span class="skill-tag">React</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section class="section projects-section" id="projects" aria-label="Featured projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Featured Projects</span>
+        <h2 class="section-title">Things I've <span class="gradient-text">Built</span></h2>
+        <p class="section-desc">A selection of projects that demonstrate my capabilities across AI, machine learning, and systems engineering.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: AquaNet -->
+        <article class="project-card glass-card reveal" aria-label="AquaNet project">
+          <div class="project-card-top">
+            <div class="project-icon-wrapper" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+            </div>
+            <div class="project-links">
+              <!-- GitHub URL: Replace with actual URL when available -->
+              <a href="https://github.com/Arthardanmuthu" target="_blank" rel="noopener noreferrer" class="project-icon-link" aria-label="AquaNet GitHub repository">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-category">AI / Machine Learning / GNN</span>
+            <h3 class="project-title">AquaNet – Urban Flood Risk Predictor</h3>
+            <p class="project-desc">An intelligent urban flood risk prediction system that models city road networks as graphs and uses Graph Neural Networks to analyze elevation, slope, and dynamic rainfall data. Produces road-level flood risk insights to support smart city planning and disaster management.</p>
+          </div>
+          <div class="project-footer">
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">PyTorch</span>
+              <span class="tech-tag">GNN</span>
+              <span class="tech-tag">Machine Learning</span>
+              <span class="tech-tag">OSMnx</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: ChronoMind -->
+        <article class="project-card glass-card project-card--featured reveal" aria-label="ChronoMind AI project">
+          <div class="project-card-top">
+            <div class="project-icon-wrapper project-icon-wrapper--ai" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div class="project-links">
+              <!-- GitHub URL: Replace with actual URL when available -->
+              <a href="https://github.com/Arthardanmuthu" target="_blank" rel="noopener noreferrer" class="project-icon-link" aria-label="ChronoMind AI GitHub repository">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-badge-featured">Featured</div>
+          <div class="project-body">
+            <span class="project-category">Agentic AI</span>
+            <h3 class="project-title">ChronoMind AI – Intelligent Study Planner</h3>
+            <p class="project-desc">An AI-powered study planner that converts academic documents into personalized learning schedules using OCR and intelligent document processing. Uses an AI reasoning engine to analyze priorities and constraints and generate optimized study plans.</p>
+          </div>
+          <div class="project-footer">
+            <div class="project-tech">
+              <span class="tech-tag">Agentic AI</span>
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">LangChain</span>
+              <span class="tech-tag">Gemini AI</span>
+              <span class="tech-tag">OCR</span>
+              <span class="tech-tag">React</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: SIEM -->
+        <article class="project-card glass-card reveal" aria-label="AI-Powered SIEM project">
+          <div class="project-card-top">
+            <div class="project-icon-wrapper project-icon-wrapper--red" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div class="project-links">
+              <!-- GitHub URL: Replace with actual URL when available -->
+              <a href="https://github.com/Arthardanmuthu" target="_blank" rel="noopener noreferrer" class="project-icon-link" aria-label="SIEM system GitHub repository">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <span class="project-category">AI / Cybersecurity</span>
+            <h3 class="project-title">Web-Based AI-Powered SIEM System</h3>
+            <p class="project-desc">A real-time cyber threat detection platform that analyzes system logs and detects anomalies using the Isolation Forest machine learning algorithm. Includes malicious IP blocking and an interactive security monitoring dashboard.</p>
+          </div>
+          <div class="project-footer">
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Machine Learning</span>
+              <span class="tech-tag">Isolation Forest</span>
+              <span class="tech-tag">Cybersecurity</span>
+              <span class="tech-tag">Web Dashboard</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="projects-cta reveal">
+        <p>More projects on GitHub</p>
+        <a href="https://github.com/Arthardanmuthu" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          View GitHub Profile
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EXPERIENCE ===================== -->
+  <section class="section experience-section" id="experience" aria-label="Experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Experience</span>
+        <h2 class="section-title">My <span class="gradient-text">Journey</span></h2>
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">Artificial Intelligence Intern</h3>
+                <span class="timeline-company">VertexMind</span>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date">May 2026 – June 2026</span>
+                <span class="timeline-badge timeline-badge--intern">Internship</span>
+              </div>
+            </div>
+            <p class="timeline-desc">Completed a one-month AI internship involving practical AI learning, problem-solving, and implementation of AI-based applications. Received <strong>Outstanding Performance</strong> recognition for contributions during the internship period.</p>
+            <div class="timeline-tags">
+              <span class="skill-tag">Artificial Intelligence</span>
+              <span class="skill-tag">Machine Learning</span>
+              <span class="skill-tag">Problem Solving</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot timeline-dot--secondary" aria-hidden="true"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">Self-Directed Projects &amp; Coding Practice</h3>
+                <span class="timeline-company">Independent</span>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date">2024 – Present</span>
+                <span class="timeline-badge">Ongoing</span>
+              </div>
+            </div>
+            <p class="timeline-desc">Built frontend web projects and continuously practiced Data Structures &amp; Algorithms, focusing on problem-solving and application performance. Engaged in competitive programming and AI/ML project development.</p>
+            <div class="timeline-tags">
+              <span class="skill-tag">DSA</span>
+              <span class="skill-tag">Competitive Programming</span>
+              <span class="skill-tag">Web Development</span>
+              <span class="skill-tag">AI/ML Projects</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ACHIEVEMENTS ===================== -->
+  <section class="section achievements-section" id="achievements" aria-label="Achievements">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Achievements</span>
+        <h2 class="section-title">Milestones &amp; <span class="gradient-text">Recognition</span></h2>
+      </div>
+
+      <div class="achievements-grid">
+
+        <div class="achievement-card glass-card reveal">
+          <div class="achievement-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H19.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg>
+          </div>
+          <div class="achievement-number gradient-text">550+</div>
+          <div class="achievement-title">Problems Solved</div>
+          <div class="achievement-sub">LeetCode</div>
+        </div>
+
+        <div class="achievement-card glass-card reveal">
+          <div class="achievement-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <div class="achievement-number gradient-text">1787</div>
+          <div class="achievement-title">LeetCode Rating</div>
+          <div class="achievement-sub">Competitive Programming</div>
+        </div>
+
+        <div class="achievement-card glass-card reveal">
+          <div class="achievement-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <div class="achievement-number gradient-text">250+</div>
+          <div class="achievement-title">Active Days</div>
+          <div class="achievement-sub">LeetCode Streak</div>
+        </div>
+
+        <div class="achievement-card glass-card reveal">
+          <div class="achievement-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div class="achievement-number gradient-text">40</div>
+          <div class="achievement-title">Contests Participated</div>
+          <div class="achievement-sub">LeetCode Contests</div>
+        </div>
+
+        <div class="achievement-card achievement-card--wide glass-card reveal">
+          <div class="achievement-icon achievement-icon--trophy" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2z"/></svg>
+          </div>
+          <div class="achievement-hackathon-info">
+            <div class="achievement-number gradient-text">Finalist</div>
+            <div class="achievement-title">Hack Orbit Hackathon</div>
+            <div class="achievement-sub">Competed among top teams nationwide</div>
+          </div>
+        </div>
+
+        <div class="achievement-card achievement-card--wide glass-card reveal">
+          <div class="achievement-icon achievement-icon--trophy" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+          </div>
+          <div class="achievement-hackathon-info">
+            <div class="achievement-number gradient-text">Finalist</div>
+            <div class="achievement-title">Summer of Codefest Hackathon</div>
+            <div class="achievement-sub">Recognized for innovative solution development</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Certifications -->
+      <div class="certifications-wrapper reveal">
+        <h3 class="cert-heading">Certifications</h3>
+        <div class="certifications-grid">
+          <div class="cert-card glass-card">
+            <div class="cert-issuer">Cisco</div>
+            <div class="cert-name">C++ Programming</div>
+          </div>
+          <div class="cert-card glass-card">
+            <div class="cert-issuer">MongoDB</div>
+            <div class="cert-name">MongoDB Certification</div>
+          </div>
+          <div class="cert-card glass-card">
+            <div class="cert-issuer">Cisco</div>
+            <div class="cert-name">Python Essentials 1</div>
+          </div>
+          <div class="cert-card glass-card">
+            <div class="cert-issuer">Cisco</div>
+            <div class="cert-name">Python Essentials 2</div>
+          </div>
+          <div class="cert-card glass-card">
+            <div class="cert-issuer">GDG On Campus CIT</div>
+            <div class="cert-name">Build Your AI Second Brain</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="section contact-section" id="contact" aria-label="Contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Contact</span>
+        <h2 class="section-title">Let's Build Something <span class="gradient-text">Meaningful Together</span></h2>
+        <p class="section-desc">I'm always interested in connecting with developers, collaborating on innovative projects, and exploring opportunities in software engineering and AI.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-cards reveal">
+          <a href="mailto:arthuarthu230@gmail.com" class="contact-card glass-card" aria-label="Email Arthardan">
+            <div class="contact-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="contact-card-info">
+              <span class="contact-card-label">Email</span>
+              <span class="contact-card-value">arthuarthu230@gmail.com</span>
+            </div>
+            <svg class="contact-card-arrow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+
+          <a href="https://github.com/Arthardanmuthu" target="_blank" rel="noopener noreferrer" class="contact-card glass-card" aria-label="Arthardan's GitHub profile">
+            <div class="contact-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            </div>
+            <div class="contact-card-info">
+              <span class="contact-card-label">GitHub</span>
+              <span class="contact-card-value">github.com/Arthardanmuthu</span>
+            </div>
+            <svg class="contact-card-arrow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+
+          <div class="contact-card glass-card contact-card--placeholder" aria-label="LinkedIn profile (URL to be added)">
+            <div class="contact-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </div>
+            <div class="contact-card-info">
+              <span class="contact-card-label">LinkedIn</span>
+              <span class="contact-card-value contact-card-placeholder">Add your LinkedIn URL</span>
+            </div>
+          </div>
+
+          <div class="contact-card glass-card contact-card--placeholder" aria-label="LeetCode profile (URL to be added)">
+            <div class="contact-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H19.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg>
+            </div>
+            <div class="contact-card-info">
+              <span class="contact-card-label">LeetCode</span>
+              <span class="contact-card-value contact-card-placeholder">Add your LeetCode URL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo" aria-label="Back to top">
+            <span class="logo-text">AM</span>
+            <span class="logo-dot"></span>
+          </a>
+          <p class="footer-tagline">Building intelligent solutions for real-world problems.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-socials">
+          <a href="https://github.com/Arthardanmuthu" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          </a>
+          <a href="mailto:arthuarthu230@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Designed &amp; Built by <span class="gradient-text">Arthardan Muthu G</span> &nbsp;·&nbsp; &copy; <span id="copyright-year"></span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+
